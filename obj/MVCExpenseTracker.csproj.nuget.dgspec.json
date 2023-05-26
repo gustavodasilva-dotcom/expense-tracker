@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/home/gustavo/Documents/workspaces/personal/MVCExpenseTracker/MVCExpenseTracker.csproj": {}
+    "C:\\Workspaces\\expense-tracker\\MVCExpenseTracker.csproj": {}
   },
   "projects": {
-    "/home/gustavo/Documents/workspaces/personal/MVCExpenseTracker/MVCExpenseTracker.csproj": {
+    "C:\\Workspaces\\expense-tracker\\MVCExpenseTracker.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/gustavo/Documents/workspaces/personal/MVCExpenseTracker/MVCExpenseTracker.csproj",
+        "projectUniqueName": "C:\\Workspaces\\expense-tracker\\MVCExpenseTracker.csproj",
         "projectName": "MVCExpenseTracker",
-        "projectPath": "/home/gustavo/Documents/workspaces/personal/MVCExpenseTracker/MVCExpenseTracker.csproj",
-        "packagesPath": "/home/gustavo/.nuget/packages/",
-        "outputPath": "/home/gustavo/Documents/workspaces/personal/MVCExpenseTracker/obj/",
+        "projectPath": "C:\\Workspaces\\expense-tracker\\MVCExpenseTracker.csproj",
+        "packagesPath": "C:\\Users\\LENOVO-EQP418\\.nuget\\packages\\",
+        "outputPath": "C:\\Workspaces\\expense-tracker\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/gustavo/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\LENOVO-EQP418\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -56,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.408/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

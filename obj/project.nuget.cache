@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5pv0mM71pF8Hg5Vi9hEcwvH0qBcsr94v2Rxct07V6l6/ZWgzxtfS1iCdG7rC09sBsIcPiqZg1dR8q6K62JdrQg==",
+  "dgSpecHash": "pLdnfY2sGQsqcLoMPu3qaoMtuKivuHvdhjTCXx0g9ruy4vVVPanLMEOyHllIyGyeLbCy4WDod5CnQfwkCAapjw==",
   "success": true,
-  "projectFilePath": "/home/gustavo/Documents/workspaces/personal/MVCExpenseTracker/MVCExpenseTracker.csproj",
+  "projectFilePath": "C:\\Workspaces\\expense-tracker\\MVCExpenseTracker.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
