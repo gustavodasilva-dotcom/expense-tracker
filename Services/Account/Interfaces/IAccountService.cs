@@ -4,5 +4,5 @@ namespace MVCExpenseTracker.Services.Account.Interfaces;
 
 public interface IAccountService
 {
-    Task SignUpAsync(UserModel user);
+    Task<UserModel> SignUpAsync(UserModel user);
 }

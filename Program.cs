@@ -2,15 +2,26 @@ using MVCExpenseTracker.Database;
 using MVCExpenseTracker.Database.Interfaces;
 using MVCExpenseTracker.Database.Seeders;
 using MVCExpenseTracker.Services.Account;
+using MVCExpenseTracker.Services.Tracker;
 using MVCExpenseTracker.Services.Account.Interfaces;
+using MVCExpenseTracker.Services.Tracker.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
+builder.Services.AddDistributedMemoryCache();
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromMinutes(15);
+    options.Cookie.HttpOnly = true;
+    options.Cookie.IsEssential = true;
+});
+
 builder.Services.AddSingleton<IMongoDbConnection, MongoDbConnection>();
 builder.Services.AddSingleton<IAccountService, AccountService>();
+builder.Services.AddSingleton<IExpensesService, ExpensesService>(); 
 
 var app = builder.Build();
 
@@ -30,6 +41,8 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+
+app.UseSession();
 
 app.UseAuthorization();
 

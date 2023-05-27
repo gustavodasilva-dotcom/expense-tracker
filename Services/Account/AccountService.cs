@@ -14,7 +14,7 @@ public class AccountService : IAccountService
         _mongoDbConnection = mongoDbConnection;
     }
 
-    public async Task SignUpAsync(UserModel user)
+    public async Task<UserModel> SignUpAsync(UserModel user)
     {
         var userFound = await _mongoDbConnection.GetAsync<UserModel>(c => c.Email == user.Email);
 
@@ -23,5 +23,7 @@ public class AccountService : IAccountService
 
         if (!user.Password.Trim().Equals(userFound.Password.DecryptString()))
             throw new Exception("Invalid password");
+
+        return userFound;
     }
 }

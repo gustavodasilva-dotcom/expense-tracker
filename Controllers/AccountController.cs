@@ -10,7 +10,7 @@ public class AccountController : Controller
     private readonly IAccountService _accountService;
 
     public AccountController(ILogger<AccountController> logger,
-                           IAccountService accountService)
+                             IAccountService accountService)
     {
         _logger = logger;
         _accountService = accountService;
@@ -24,6 +24,8 @@ public class AccountController : Controller
     [HttpPost]
     public async Task<IActionResult> Login(string email, string password)
     {
+        _logger.LogDebug($"Login request: {email}");
+
         try
         {
             var user = new UserModel
@@ -32,11 +34,16 @@ public class AccountController : Controller
                 Password = password
             };
 
-            await _accountService.SignUpAsync(user);
-            return RedirectPermanent("~/Home/Index");
+            var userAuthenticated = await _accountService.SignUpAsync(user);
+
+            HttpContext.Session.SetString("UserEmail", userAuthenticated.Email);
+
+            return RedirectPermanent("~/Expenses/Overview");
         }
         catch (Exception e)
         {
+            _logger.LogDebug($"Login error: {e.Message}");
+            
             ViewBag.message = e.Message;
         }
 
