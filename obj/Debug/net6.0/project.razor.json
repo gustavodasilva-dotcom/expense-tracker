@@ -18379,6 +18379,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/home/gustavo/Documents/workspaces/personal/MVCExpenseTracker/Views/Shared/_Stylesheet.cshtml",
+      "TargetPath": "Views\\Shared\\_Stylesheet.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/gustavo/Documents/workspaces/personal/MVCExpenseTracker/Views/Home/Privacy.cshtml",
       "TargetPath": "Views\\Home\\Privacy.cshtml",
       "FileKind": "mvc"
@@ -18394,8 +18399,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/home/gustavo/Documents/workspaces/personal/MVCExpenseTracker/Views/Shared/_Footer.cshtml",
+      "TargetPath": "Views\\Shared\\_Footer.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/gustavo/Documents/workspaces/personal/MVCExpenseTracker/Views/Account/_forgotMyPassword.cshtml",
       "TargetPath": "Views\\Account\\_forgotMyPassword.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/gustavo/Documents/workspaces/personal/MVCExpenseTracker/Views/Shared/_Script.cshtml",
+      "TargetPath": "Views\\Shared\\_Script.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -18416,6 +18431,11 @@
     {
       "FilePath": "/home/gustavo/Documents/workspaces/personal/MVCExpenseTracker/Views/_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/gustavo/Documents/workspaces/personal/MVCExpenseTracker/Views/Shared/_Header.cshtml",
+      "TargetPath": "Views\\Shared\\_Header.cshtml",
       "FileKind": "mvc"
     }
   ],
