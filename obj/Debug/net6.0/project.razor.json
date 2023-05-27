@@ -18372,6 +18372,52 @@
     "CSharpLanguageVersion": 1000
   },
   "RootNamespace": "MVCExpenseTracker",
-  "Documents": [],
+  "Documents": [
+    {
+      "FilePath": "/home/gustavo/Documents/workspaces/personal/MVCExpenseTracker/Views/Account/Login.cshtml",
+      "TargetPath": "Views\\Account\\Login.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/gustavo/Documents/workspaces/personal/MVCExpenseTracker/Views/Home/Privacy.cshtml",
+      "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/gustavo/Documents/workspaces/personal/MVCExpenseTracker/Views/Home/Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/gustavo/Documents/workspaces/personal/MVCExpenseTracker/Views/_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/gustavo/Documents/workspaces/personal/MVCExpenseTracker/Views/Account/_forgotMyPassword.cshtml",
+      "TargetPath": "Views\\Account\\_forgotMyPassword.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/gustavo/Documents/workspaces/personal/MVCExpenseTracker/Views/Shared/_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/gustavo/Documents/workspaces/personal/MVCExpenseTracker/Views/Shared/Error.cshtml",
+      "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/gustavo/Documents/workspaces/personal/MVCExpenseTracker/Views/Shared/_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/gustavo/Documents/workspaces/personal/MVCExpenseTracker/Views/_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    }
+  ],
   "SerializationFormat": "0.3"
 }

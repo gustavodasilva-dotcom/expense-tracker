@@ -1,0 +1,23 @@
+@{
+    ViewData["Title"] = "Login";
+}
+
+<style>
+    .login-alert:empty {
+        display: none;
+    }
+</style>
+
+<form method="post">
+    <div class="alert alert-danger login-alert" role="alert">@ViewBag.message</div>
+    <div class="mb-3">
+        <label for="userEmail" class="form-label">Email</label>
+        <input type="email" class="form-control edt-user-email" id="email" aria-describedby="emailHelp">
+    </div>
+    <div class="mb-3">
+        <label for="userPassword" class="form-label">Password</label>
+        <input type="password" class="form-control edt-user-password" id="password">
+    </div>
+    <button type="submit" class="btn btn-primary">Log in</button>
+    <button type="button" class="btn btn-light">Forgot my password</button>
+</form>
