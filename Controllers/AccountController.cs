@@ -1,10 +1,8 @@
-using System.Net;
 using Microsoft.AspNetCore.Mvc;
 using MVCExpenseTracker.Database.Models;
-using MVCExpenseTracker.Models.Core;
 using MVCExpenseTracker.Services.Account.Interfaces;
 
-namespace MVCExpenseTracker.Controllers.Account;
+namespace MVCExpenseTracker.Controllers;
 
 public class AccountController : Controller
 {
