@@ -23,8 +23,8 @@ public static class Seeders
             {
                 var adminUser = new UserModel
                 {
-                    Email = "admin@expensetracker.com",
-                    Password = "Admin123@".EncryptString()
+                    email = "admin@expensetracker.com",
+                    password = "Admin123@".EncryptString()
                 };
 
                 collection.InsertOne(adminUser);

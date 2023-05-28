@@ -5,12 +5,26 @@
 <main>
     <section class="breadcrumbs">
         <div class="container">
-            <h2>Dashboard</h2>
+            <ol>
+                <li><a href="~/Home/Index">Home</a></li>
+                <li>Overview</li>
+            </ol>
+            <h2>Overview</h2>
         </div>
     </section>
     <section>
         <div class="container" data-aos="fade-up">
             <div class="row">
+                <div class="row">
+                    <div class="col-xl-3 col-md-6 mb-4">
+                        <a href="~/Expenses/Tracker" class="btn btn-primary btn-icon-split btn-lg">
+                            <span class="icon text-white-50">
+                                <i class="fas fa-clipboard-list"></i>
+                            </span>
+                            <span class="text">Go to Tracker</span>
+                        </a>
+                    </div>
+                </div>
                 <div class="row">
                     <div class="col-xl-3 col-md-6 mb-4">
                         <div class="card border-left-primary shadow h-100 py-2">
@@ -65,11 +79,8 @@
                     </div>
                 </div>
                 <div class="row">
-
-                    <!-- Area Chart -->
                     <div class="col-xl-8 col-lg-7">
                         <div class="card shadow mb-4">
-                            <!-- Card Header - Dropdown -->
                             <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                                 <h6 class="m-0 font-weight-bold text-primary">Earnings Overview</h6>
                                 <div class="dropdown no-arrow">
@@ -87,7 +98,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- Card Body -->
                             <div class="card-body">
                                 <div class="chart-area">
                                     <canvas id="myAreaChart"></canvas>
@@ -95,11 +105,8 @@
                             </div>
                         </div>
                     </div>
-
-                    <!-- Pie Chart -->
                     <div class="col-xl-4 col-lg-5">
                         <div class="card shadow mb-4">
-                            <!-- Card Header - Dropdown -->
                             <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                                 <h6 class="m-0 font-weight-bold text-primary">Revenue Sources</h6>
                                 <div class="dropdown no-arrow">
@@ -117,7 +124,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- Card Body -->
                             <div class="card-body">
                                 <div class="chart-pie pt-4 pb-2">
                                     <canvas id="myPieChart"></canvas>
@@ -138,11 +144,7 @@
                     </div>
                 </div>
                 <div class="row">
-
-                    <!-- Content Column -->
                     <div class="col-lg-6 mb-4">
-
-                        <!-- Project Card Example -->
                         <div class="card shadow mb-4">
                             <div class="card-header py-3">
                                 <h6 class="m-0 font-weight-bold text-primary">Projects</h6>
@@ -180,8 +182,6 @@
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Color System -->
                         <div class="row">
                             <div class="col-lg-6 mb-4">
                                 <div class="card bg-primary text-white shadow">
@@ -248,12 +248,8 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
-
                     <div class="col-lg-6 mb-4">
-
-                        <!-- Illustrations -->
                         <div class="card shadow mb-4">
                             <div class="card-header py-3">
                                 <h6 class="m-0 font-weight-bold text-primary">Illustrations</h6>
@@ -271,8 +267,6 @@
                                     unDraw &rarr;</a>
                             </div>
                         </div>
-
-                        <!-- Approach -->
                         <div class="card shadow mb-4">
                             <div class="card-header py-3">
                                 <h6 class="m-0 font-weight-bold text-primary">Development Approach</h6>
@@ -285,7 +279,6 @@
                                     Bootstrap framework, especially the utility classes.</p>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>

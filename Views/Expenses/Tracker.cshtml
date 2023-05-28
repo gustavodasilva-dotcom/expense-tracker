@@ -1,0 +1,32 @@
+@{
+    ViewData["Title"] = "Tracker";
+}
+
+<main>
+    <section class="breadcrumbs">
+        <div class="container">
+            <ol>
+                <li><a href="~/Home/Index">Home</a></li>
+                <li><a href="~/Expenses/Overview">Overview</a></li>
+                <li>Tracker</li>
+            </ol>
+            <h2>Tracker</h2>
+        </div>
+    </section>
+    <section>
+        <div class="container" data-aos="fade-up">
+            <div class="row">
+                <div class="row">
+                    @Html.Partial("~/Views/Expenses/_monthlyIncome.cshtml")
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+@section Scripts {
+    <script src="~/js/pages/Expenses/Tracker/index.js"></script>
+    <script>
+        TrackerIndexPage.init();
+    </script>
+}

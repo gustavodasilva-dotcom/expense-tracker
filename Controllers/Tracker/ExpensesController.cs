@@ -8,7 +8,8 @@ public class ExpensesController : BaseController
 {
     private readonly IExpensesService _expensesService;
 
-    public ExpensesController(IExpensesService expensesService) {
+    public ExpensesController(IExpensesService expensesService)
+    {
         _expensesService = expensesService;
     }
 
@@ -17,8 +18,13 @@ public class ExpensesController : BaseController
         return Authenticated();
     }
 
-    public IActionResult Configuration()
+    public IActionResult Tracker()
     {
         return Authenticated();
+    }
+
+    public IActionResult _monthlyIncome()
+    {
+        return PartialView();
     }
 }

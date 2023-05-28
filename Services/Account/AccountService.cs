@@ -14,16 +14,38 @@ public class AccountService : IAccountService
         _mongoDbConnection = mongoDbConnection;
     }
 
-    public async Task<UserModel> SignUpAsync(UserModel user)
+    public async Task<UserModel> GetAsync(string id)
     {
-        var userFound = await _mongoDbConnection.GetAsync<UserModel>(c => c.Email == user.Email);
+        var userFound = await _mongoDbConnection.GetAsync<UserModel>(c => c.id == id);
 
         if (userFound == null)
             throw new Exception("User not found");
 
-        if (!user.Password.Trim().Equals(userFound.Password.DecryptString()))
+        return userFound;
+    }
+
+    public async Task<UserModel> SignUpAsync(UserModel user)
+    {
+        var userFound = await _mongoDbConnection.GetAsync<UserModel>(c => c.email == user.email);
+
+        if (userFound == null)
+            throw new Exception("User not found");
+
+        if (!user.password.Trim().Equals(userFound.password.DecryptString()))
             throw new Exception("Invalid password");
 
         return userFound;
+    }
+
+    public async Task<UserModel> UpdateAsync(UserModel user)
+    {
+        var userFound = await _mongoDbConnection.GetAsync<UserModel>(c => c.id == user.id);
+
+        if (userFound == null)
+            throw new Exception("User not found");
+
+        await _mongoDbConnection.UpdateAsync<UserModel>(user);
+
+        return await GetAsync(user.id);
     }
 }

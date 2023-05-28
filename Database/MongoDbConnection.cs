@@ -1,4 +1,5 @@
 using System.Linq.Expressions;
+using System.Reflection;
 using Humanizer;
 using MongoDB.Driver;
 using MVCExpenseTracker.Database.Interfaces;
@@ -39,5 +40,20 @@ public class MongoDbConnection : IMongoDbConnection
         var collection = Connect<T>();
         var results = await collection.FindAsync(_ => true);
         return results.ToList();
+    }
+
+    public Task UpdateAsync<T>(T entity)
+    {
+        var collection = Connect<T>();
+
+        var type = entity?.GetType();
+        PropertyInfo prop = type?.GetProperty("id")!;
+        var id = prop.GetValue(entity);
+
+        var filter = Builders<T>.Filter.Eq("id", id);
+        return collection.ReplaceOneAsync(filter, entity, new ReplaceOptions
+        {
+            IsUpsert = true
+        });
     }
 }

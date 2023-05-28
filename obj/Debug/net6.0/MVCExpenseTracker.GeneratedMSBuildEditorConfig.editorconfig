@@ -23,12 +23,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9fZm9yZ290TXlQYXNzd29yZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/gustavo/Documents/workspaces/personal/MVCExpenseTracker/Views/Expenses/Configuration.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRXhwZW5zZXMvQ29uZmlndXJhdGlvbi5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
 [/home/gustavo/Documents/workspaces/personal/MVCExpenseTracker/Views/Expenses/Overview.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRXhwZW5zZXMvT3ZlcnZpZXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/gustavo/Documents/workspaces/personal/MVCExpenseTracker/Views/Expenses/Tracker.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRXhwZW5zZXMvVHJhY2tlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/gustavo/Documents/workspaces/personal/MVCExpenseTracker/Views/Expenses/_monthlyIncome.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRXhwZW5zZXMvX21vbnRobHlJbmNvbWUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/home/gustavo/Documents/workspaces/personal/MVCExpenseTracker/Views/Home/Index.cshtml]
