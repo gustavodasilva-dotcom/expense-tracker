@@ -58,12 +58,12 @@ public class AccountController : Controller
     {
         _logger.LogInformation("Get session user");
 
-        var retorno = new JsonResponseModel();
+        var result = new JsonResponseModel();
 
         try
         {
             var userId = HttpContext.Session.GetString("UserId") ?? throw new Exception("No session found");
-            retorno.data = await _accountService.GetAsync(userId);
+            result.data = await _accountService.GetAsync(userId);
 
             _logger.LogInformation($"User {userId} found");
         }
@@ -71,11 +71,11 @@ public class AccountController : Controller
         {
             _logger.LogError($"Get error: {e.Message}");
 
-            retorno.status_code = HttpStatusCode.InternalServerError;
-            retorno.status_message = e.Message;
+            result.status_code = HttpStatusCode.InternalServerError;
+            result.status_message = e.Message;
         }
 
-        return Json(retorno);
+        return Json(result);
     }
 
     [HttpPut]
@@ -83,11 +83,11 @@ public class AccountController : Controller
     {
         _logger.LogInformation("Update user");
 
-        var retorno = new JsonResponseModel();
+        var result = new JsonResponseModel();
 
         try
         {
-            retorno.data = await _accountService.UpdateAsync(model);
+            result.data = await _accountService.UpdateAsync(model);
 
             _logger.LogInformation("Update successful");
         }
@@ -95,11 +95,11 @@ public class AccountController : Controller
         {
             _logger.LogError($"Update error: {e.Message}");
 
-            retorno.status_code = HttpStatusCode.InternalServerError;
-            retorno.status_message = e.Message;
+            result.status_code = HttpStatusCode.InternalServerError;
+            result.status_message = e.Message;
         }
 
-        return Json(retorno);
+        return Json(result);
     }
 
     public IActionResult _forgotMyPassword()

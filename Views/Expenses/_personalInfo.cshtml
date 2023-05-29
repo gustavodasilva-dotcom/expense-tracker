@@ -1,0 +1,42 @@
+<div class="col-lg-6 mb-4">
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">Add a new expense:</h6>
+        </div>
+        <div class="card-body">
+            <div class="row g-3">
+                <div class="col-md-12">
+                    <label for="cmbExpenseType" class="col-form-label">Expense type</label>
+                    <select class="form-select cmb-expenses-type" id="cmbExpenseType"></select>
+                </div>
+                <div class="col-md-6">
+                    <label for="edtExpenseDate" class="col-form-label">Expense date</label>
+                    <div class="input-group date">
+                        <input type="text" class="form-control datepicker edt-expense-date" id="edtExpenseDate" />
+                        <span class="input-group-append">
+                            <span class="input-group-text bg-light d-block">
+                                <i class="fa fa-calendar"></i>
+                            </span>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="edtExpenseValue" class="col-form-label">Expense value</label>
+                    <input type="text" class="form-control edt-expense-value" id="edtExpenseValue">
+                </div>
+                <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                    <label for="floatingTextarea">Comments</label>
+                </div>
+                <div class="col-md-4">
+                    <a href="#" class="btn btn-primary btn-icon-split mt-1 btn-add-expense">
+                        <span class="icon text-white-50">
+                            <i class="fas fa-save"></i>
+                        </span>
+                        <span class="text">Adicionar</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

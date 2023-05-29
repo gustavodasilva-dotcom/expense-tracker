@@ -42,6 +42,21 @@ public class MongoDbConnection : IMongoDbConnection
         return results.ToList();
     }
 
+    public async Task<MongoDB.Bson.ObjectId> InsertAsync<T>(T entity)
+    {
+        var collection = Connect<T>();
+
+        var id = MongoDB.Bson.ObjectId.GenerateNewId();
+
+        var type = entity?.GetType();
+        PropertyInfo prop = type?.GetProperty("id")!;
+        prop.SetValue(entity, id, null);
+
+        await collection.InsertOneAsync(entity);
+
+        return id;
+    }
+
     public Task UpdateAsync<T>(T entity)
     {
         var collection = Connect<T>();

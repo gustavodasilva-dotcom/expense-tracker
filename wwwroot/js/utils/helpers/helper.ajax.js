@@ -1,4 +1,4 @@
-var HelperAjax = function () {
+const HelperAjax = function () {
     return {
         getPath: (url) => {
             return `${window.location.origin}/${url}`;
