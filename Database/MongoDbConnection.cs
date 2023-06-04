@@ -28,10 +28,10 @@ public class MongoDbConnection : IMongoDbConnection
         return db.GetCollection<T>(collection);
     }
 
-    public async Task<T> GetAsync<T>(Expression<Func<T, bool>> func)
+    public async Task<T> GetAsync<T>(Expression<Func<T, bool>> expression)
     {
         var collection = Connect<T>();
-        var result = await collection.FindAsync(func);
+        var result = await collection.FindAsync(expression);
         return result.FirstOrDefault();
     }
 
@@ -39,6 +39,13 @@ public class MongoDbConnection : IMongoDbConnection
     {
         var collection = Connect<T>();
         var results = await collection.FindAsync(_ => true);
+        return results.ToList();
+    }
+
+    public async Task<List<T>> GetAllAsync<T>(Expression<Func<T, bool>> expression)
+    {
+        var collection = Connect<T>();
+        var results = await collection.FindAsync(expression);
         return results.ToList();
     }
 
@@ -50,7 +57,7 @@ public class MongoDbConnection : IMongoDbConnection
 
         var type = entity?.GetType();
         PropertyInfo prop = type?.GetProperty("id")!;
-        prop.SetValue(entity, id, null);
+        prop.SetValue(entity, id.ToString(), null);
 
         await collection.InsertOneAsync(entity);
 
@@ -70,5 +77,11 @@ public class MongoDbConnection : IMongoDbConnection
         {
             IsUpsert = true
         });
+    }
+
+    public Task DeleteAsync<T>(Expression<Func<T, bool>> expression)
+    {
+        var collection = Connect<T>();
+        return collection.DeleteOneAsync(expression);
     }
 }

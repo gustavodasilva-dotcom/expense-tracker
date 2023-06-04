@@ -34,6 +34,12 @@ const HelperFunctions = function () {
                         }));
                 });
             }
+        },
+        formatters: {
+            usDollar: (value) => {
+                if (!value) return value;
+                return parseFloat(value).toLocaleString('en-US');
+            }
         }
     };
 }();

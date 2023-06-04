@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "wVslnsl8AD7dV6+LnmAms4hq09ynokoXFVVr18iW/eo=",
+  "Hash": "R0o6XKWqKc8mUKVepL9FWNJahaPVrFu9J6cMtP2FeHI=",
   "Source": "MVCExpenseTracker",
   "BasePath": "_content/MVCExpenseTracker",
   "Mode": "Default",
@@ -30224,6 +30224,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/plugins/fontawesome-free/webfonts/fa-solid-900.woff2"
+    },
+    {
+      "Identity": "/home/gustavo/Documents/workspaces/personal/MVCExpenseTracker/wwwroot/plugins/moment/moment-with-locales.js",
+      "SourceId": "MVCExpenseTracker",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/gustavo/Documents/workspaces/personal/MVCExpenseTracker/wwwroot/",
+      "BasePath": "_content/MVCExpenseTracker",
+      "RelativePath": "plugins/moment/moment-with-locales.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/plugins/moment/moment-with-locales.js"
+    },
+    {
+      "Identity": "/home/gustavo/Documents/workspaces/personal/MVCExpenseTracker/wwwroot/plugins/moment/moment.js",
+      "SourceId": "MVCExpenseTracker",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/gustavo/Documents/workspaces/personal/MVCExpenseTracker/wwwroot/",
+      "BasePath": "_content/MVCExpenseTracker",
+      "RelativePath": "plugins/moment/moment.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/plugins/moment/moment.js"
     },
     {
       "Identity": "/home/gustavo/Documents/workspaces/personal/MVCExpenseTracker/wwwroot/themes/main/assets/css/style.css",

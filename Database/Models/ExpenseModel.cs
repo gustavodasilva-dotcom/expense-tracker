@@ -9,6 +9,7 @@ public class ExpenseModel
     [BsonRepresentation(BsonType.ObjectId)]
     public string id { get; set; }
     public DateTime date { get; set; }
+    public decimal value { get; set; }
     public string comments { get; set; }
     public ExpenseTypeModel expenseType { get; set; }
     public UserModel user { get; set; }

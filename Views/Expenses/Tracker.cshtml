@@ -18,7 +18,27 @@
             <div class="row">
                 <div class="row">
                     @Html.Partial("~/Views/Expenses/_monthlyIncome.cshtml")
-                    @Html.Partial("~/Views/Expenses/_personalInfo.cshtml")
+                    @Html.Partial("~/Views/Expenses/_addNewExpense.cshtml")
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 mb-4">
+                        <div class="card shadow mb-4 p-4">
+                            <table class="table table-striped tb-expenses">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Value</th>
+                                        <th scope="col">Date</th>
+                                        <th scope="col">Expense Type</th>
+                                        <th scope="col">Comment</th>
+                                        <th scope="col">Edit</th>
+                                        <th scope="col">Delete</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="tb-expenses-rows"></tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
